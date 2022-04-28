@@ -8,6 +8,76 @@
 
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+body>
+    <main>
+        <header>
+        <h1 class="display-3">ToDo-Tracker</h1>
+        </header>
+        <nav class="nav">
+            <ul class="nav nav-tabs">
+                <a class="nav-link active" href="index.html">Übersicht</a>
+                <a class="nav-link" href="neueToDo.html">ToDo hinzufügen</a>
+                <a class="nav-link" href="impressum.html">Impressum</a>
+            </ul>
+        </nav>
+        <div>
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+            <tr>
+                <th>Nr.</th>
+                <th>ToDo</th>
+                <th>Deadline</th>
+                <th>Status</th>
+                <th>Optionen</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>1</th>
+                <td>Beispielseite mit dem Bootstrap Framework anlegen</td>
+                <td>09.05.2022</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 84%">84%</div>
+                    </div>
+                </td>
+                <td>
+                    <a class="btn btn-primary" href="todoBearbeiten.html" role="button">Bearbeiten</a>
+                    <button type="button" class="btn btn-danger">Löschen</button>
+                </td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Klausurvorbereitung</td>
+                <td>09.05.2022</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 44%">44%</div>
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 86%"></div>
+                    </div>
+                </td>
+                <td>
+                    <a class="btn btn-primary" href="todoBearbeiten.html" role="button">Bearbeiten</a>
+                    <button type="button" class="btn btn-danger">Löschen</button>
+                </td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Präsentation</td>
+                <td>09.05.2022</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 36%">36%</div>
+                    </div>
+                </td>
+                <td>
+                    <a class="btn btn-primary" href="todoBearbeiten.html" role="button">Bearbeiten</a>
+                    <button type="button" class="btn btn-danger">Löschen</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </main>
 </body>
 </html>
