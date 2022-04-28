@@ -7,20 +7,20 @@
 </head>
 
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <main>
-        <header>
+        <header style="padding: 15px">
         <h1 class="display-3">ToDo-Tracker</h1>
         </header>
-        <nav class="nav">
+        <nav class="nav nav-tabs" style="padding-left: 15px">
             <ul class="nav nav-tabs">
                 <a class="nav-link active" href="index.html">Übersicht</a>
-                <a class="nav-link" href="neueToDo.html">ToDo hinzufügen</a>
-                <a class="nav-link" href="impressum.html">Impressum</a>
+                <a class="nav-link" href="html/create.html">ToDo hinzufügen</a>
+                <a class="nav-link" href="html/impressum.html">Impressum</a>
             </ul>
         </nav>
-        <div>
+        <div style="padding: 30px">
         <table class="table table-striped table-hover table-bordered">
             <thead>
             <tr>
@@ -32,21 +32,22 @@ body>
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr id="1">
                 <th>1</th>
                 <td>Beispielseite mit dem Bootstrap Framework anlegen</td>
                 <td>09.05.2022</td>
                 <td>
                     <div class="progress">
                         <div class="progress-bar bg-success" role="progressbar" style="width: 84%">84%</div>
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 16%"></div>
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-primary" href="todoBearbeiten.html" role="button">Bearbeiten</a>
+                    <a class="btn btn-primary" href="html/edit.html?id=1" role="button">Bearbeiten</a>
                     <button type="button" class="btn btn-danger">Löschen</button>
                 </td>
             </tr>
-            <tr>
+            <tr id="2">
                 <th>2</th>
                 <td>Klausurvorbereitung</td>
                 <td>09.05.2022</td>
@@ -57,21 +58,22 @@ body>
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-primary" href="todoBearbeiten.html" role="button">Bearbeiten</a>
+                    <a class="btn btn-primary" href="html/edit.html?id=2" role="button">Bearbeiten</a>
                     <button type="button" class="btn btn-danger">Löschen</button>
                 </td>
             </tr>
-            <tr>
+            <tr id="3">
                 <th>3</th>
                 <td>Präsentation</td>
                 <td>09.05.2022</td>
                 <td>
                     <div class="progress">
                         <div class="progress-bar bg-success" role="progressbar" style="width: 36%">36%</div>
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 64%"></div>
                     </div>
                 </td>
                 <td>
-                    <a class="btn btn-primary" href="todoBearbeiten.html" role="button">Bearbeiten</a>
+                    <a class="btn btn-primary" href="html/edit.html?id=3" role="button">Bearbeiten</a>
                     <button type="button" class="btn btn-danger">Löschen</button>
                 </td>
             </tr>
